@@ -14,6 +14,11 @@ fbtcn_results/
 *.pdf
 # 4. 全部 .pt 结尾文件
 *.pt
+*.md
+# __pycache__、shell 文件夹
+__pycache__/
+**/__pycache__/
+shell/
 
 # 系统生成的核心转储，避免误提交
 core
