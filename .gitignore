@@ -20,5 +20,9 @@ __pycache__/
 **/__pycache__/
 shell/
 
+# logs 文件夹（.log 等）
+auto_baselines_result/logs/mcd/
+剩余寿命预测模型/FBTCN预测模型/logs/
+
 # 系统生成的核心转储，避免误提交
 core
