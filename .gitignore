@@ -3,6 +3,9 @@ datasetresult/
 
 # 2. auto_ 开头的全部文件夹（含子目录中的）
 **/auto_*/
+# fbtcn_results 文件夹（根目录及子目录）
+fbtcn_results/
+剩余寿命预测模型/fbtcn_results/
 **/画图对比*/
 # 3. 全部 png、svg 文件
 *.png
