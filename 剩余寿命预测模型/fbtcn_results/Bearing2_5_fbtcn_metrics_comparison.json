@@ -1,0 +1,139 @@
+{
+    "comparison_timestamp": "2026-01-03 19:44:12",
+    "previous_metrics": {
+        "timestamp": "2026-01-03 19:39:49",
+        "test_bearing": "Bearing2_5",
+        "MSE": 0.017124808141849246,
+        "RMSE": 0.13086179022865782,
+        "MAE": 0.09895393358004079,
+        "R2": 0.794497006418234,
+        "PICP": 0.9543147208121827,
+        "NMPIW": 0.534739738013596,
+        "CWC": 0.534739738013596,
+        "ECE": 0.022487309644670068,
+        "Aleatoric_Uncertainty": 0.01639344495943355,
+        "Epistemic_Uncertainty": 0.0024006646126508713,
+        "Sharpness": 0.01639344495943355
+    },
+    "current_metrics": {
+        "timestamp": "2026-01-03 19:44:12",
+        "test_bearing": "Bearing2_5",
+        "MSE": 0.020334716674519592,
+        "RMSE": 0.14259984808729492,
+        "MAE": 0.1114134860949734,
+        "R2": 0.7559771113558547,
+        "PICP": 0.9289340101522843,
+        "NMPIW": 0.5095641003243192,
+        "CWC": 1.0410558286098472,
+        "ECE": 0.021573604060913697,
+        "Aleatoric_Uncertainty": 0.01515844756463155,
+        "Epistemic_Uncertainty": 0.0019243995193392038,
+        "Sharpness": 0.01515844756463155
+    },
+    "comparison_results": [
+        {
+            "metric": "均方误差-MSE",
+            "previous": 0.017124808141849246,
+            "current": 0.020334716674519592,
+            "difference": 0.0032099085326703462,
+            "difference_percent": 18.744201430356696,
+            "change": "↑ 变差",
+            "improved": false
+        },
+        {
+            "metric": "均方根误差-RMSE",
+            "previous": 0.13086179022865782,
+            "current": 0.14259984808729492,
+            "difference": 0.011738057858637102,
+            "difference_percent": 8.969812989816909,
+            "change": "↑ 变差",
+            "improved": false
+        },
+        {
+            "metric": "平均绝对误差-MAE",
+            "previous": 0.09895393358004079,
+            "current": 0.1114134860949734,
+            "difference": 0.01245955251493261,
+            "difference_percent": 12.591265515336447,
+            "change": "↑ 变差",
+            "improved": false
+        },
+        {
+            "metric": "R²分数",
+            "previous": 0.794497006418234,
+            "current": 0.7559771113558547,
+            "difference": -0.038519895062379295,
+            "difference_percent": -4.848337344408055,
+            "change": "↓ 变差",
+            "improved": false
+        },
+        {
+            "metric": "PICP",
+            "previous": 0.9543147208121827,
+            "current": 0.9289340101522843,
+            "difference": -0.025380710659898442,
+            "difference_percent": -2.659574468085103,
+            "change": "↓ 变差",
+            "improved": false
+        },
+        {
+            "metric": "NMPIW",
+            "previous": 0.534739738013596,
+            "current": 0.5095641003243192,
+            "difference": -0.025175637689276775,
+            "difference_percent": -4.708016984635743,
+            "change": "↓ 改进",
+            "improved": true
+        },
+        {
+            "metric": "CWC",
+            "previous": 0.534739738013596,
+            "current": 1.0410558286098472,
+            "difference": 0.5063160905962513,
+            "difference_percent": 94.6845829107576,
+            "change": "↑ 变差",
+            "improved": false
+        },
+        {
+            "metric": "ECE",
+            "previous": 0.022487309644670068,
+            "current": 0.021573604060913697,
+            "difference": -0.0009137055837563704,
+            "difference_percent": -4.063205417607333,
+            "change": "↓ 改进",
+            "improved": true
+        },
+        {
+            "metric": "Aleatoric Uncertainty",
+            "previous": 0.01639344495943355,
+            "current": 0.01515844756463155,
+            "difference": -0.001234997394802,
+            "difference_percent": -7.533483034579167,
+            "change": "↓ 改进",
+            "improved": true
+        },
+        {
+            "metric": "Epistemic Uncertainty",
+            "previous": 0.0024006646126508713,
+            "current": 0.0019243995193392038,
+            "difference": -0.00047626509331166744,
+            "difference_percent": -19.838885065488764,
+            "change": "↓ 改进",
+            "improved": true
+        },
+        {
+            "metric": "Sharpness",
+            "previous": 0.01639344495943355,
+            "current": 0.01515844756463155,
+            "difference": -0.001234997394802,
+            "difference_percent": -7.533483034579167,
+            "change": "↓ 改进",
+            "improved": true
+        }
+    ],
+    "summary": {
+        "improved_count": 5,
+        "worsened_count": 6,
+        "same_count": 0
+    }
+}

@@ -1,0 +1,623 @@
+2026-02-04 10:57:13 - INFO - 日志文件已创建: /mnt/uq_aware_rul_prediction4bearing-main/剩余寿命预测模型/FBTCN预测模型/logs/fbtcn_training_20260204_105713.log
+2026-02-04 10:57:13 - INFO - 
+🚀 任务: xjtu_made_mscrgat -> xjtu_made_mscrgat (Ensemble)
+2026-02-04 10:57:13 - INFO - 设备: cuda, ensemble_size: 5, ensemble_strategy: bagging
+2026-02-04 10:57:13 - INFO - 训练数据集: xjtu_made_mscrgat, 测试数据集: xjtu_made_mscrgat
+2026-02-04 10:57:13 - INFO - 验证集轴承(用于校准): ['Bearing1_1_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled']
+2026-02-04 10:57:13 - INFO - 总轮数: 3
+2026-02-04 10:57:13 - INFO - 
+================================================================================
+2026-02-04 10:57:13 - INFO - 📊 MSCRGAT Ensemble 折 1/3 (ensemble_size=5, strategy=bagging)
+2026-02-04 10:57:13 - INFO - ================================================================================
+2026-02-04 10:57:13 - INFO - 源域: Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing3_1, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 10:57:13 - INFO - 目标域: Bearing1_1, Bearing1_2
+2026-02-04 10:57:13 - INFO - 测试: Bearing1_3, Bearing1_5
+2026-02-04 10:57:13 - INFO - 
+--- 训练 Ensemble 成员 1/5 (seed=0, Bagging 采样 7/9 个轴承) ---
+2026-02-04 10:57:13 - INFO - 
+================================================================================
+2026-02-04 10:57:13 - INFO - 📊 MSCRGAT 折 1/3 - 训练开始前数据划分
+2026-02-04 10:57:13 - INFO - ================================================================================
+2026-02-04 10:57:13 - INFO - 源域训练集 (7 个): ['Bearing3_1_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled']
+2026-02-04 10:57:13 - INFO - 目标域训练集 (2 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 10:57:13 - INFO - 测试集 (2 个): ['Bearing1_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 10:57:13 - INFO - 源域(精简): Bearing2_1, Bearing2_4, Bearing3_1, Bearing3_4
+2026-02-04 10:57:13 - INFO - 目标域(精简): Bearing1_1, Bearing1_2
+2026-02-04 10:57:13 - INFO - 测试(精简): Bearing1_3, Bearing1_5
+2026-02-04 10:58:10 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/1_1_best_mscrgat_ensemble_0.pt
+2026-02-04 10:58:10 - INFO - 
+--- 训练 Ensemble 成员 2/5 (seed=1, Bagging 采样 7/9 个轴承) ---
+2026-02-04 10:58:10 - INFO - 
+================================================================================
+2026-02-04 10:58:10 - INFO - 📊 MSCRGAT 折 1/3 - 训练开始前数据划分
+2026-02-04 10:58:10 - INFO - ================================================================================
+2026-02-04 10:58:10 - INFO - 源域训练集 (7 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled']
+2026-02-04 10:58:10 - INFO - 目标域训练集 (2 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 10:58:10 - INFO - 测试集 (2 个): ['Bearing1_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 10:58:10 - INFO - 源域(精简): Bearing2_1, Bearing2_2, Bearing3_1, Bearing3_4, Bearing3_5
+2026-02-04 10:58:10 - INFO - 目标域(精简): Bearing1_1, Bearing1_2
+2026-02-04 10:58:10 - INFO - 测试(精简): Bearing1_3, Bearing1_5
+2026-02-04 10:59:24 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/1_1_best_mscrgat_ensemble_1.pt
+2026-02-04 10:59:24 - INFO - 
+--- 训练 Ensemble 成员 3/5 (seed=2, Bagging 采样 7/9 个轴承) ---
+2026-02-04 10:59:24 - INFO - 
+================================================================================
+2026-02-04 10:59:24 - INFO - 📊 MSCRGAT 折 1/3 - 训练开始前数据划分
+2026-02-04 10:59:24 - INFO - ================================================================================
+2026-02-04 10:59:24 - INFO - 源域训练集 (7 个): ['Bearing3_5_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled']
+2026-02-04 10:59:24 - INFO - 目标域训练集 (2 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 10:59:24 - INFO - 测试集 (2 个): ['Bearing1_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 10:59:24 - INFO - 源域(精简): Bearing2_3, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 10:59:24 - INFO - 目标域(精简): Bearing1_1, Bearing1_2
+2026-02-04 10:59:24 - INFO - 测试(精简): Bearing1_3, Bearing1_5
+2026-02-04 11:00:54 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/1_1_best_mscrgat_ensemble_2.pt
+2026-02-04 11:00:54 - INFO - 
+--- 训练 Ensemble 成员 4/5 (seed=3, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:00:54 - INFO - 
+================================================================================
+2026-02-04 11:00:54 - INFO - 📊 MSCRGAT 折 1/3 - 训练开始前数据划分
+2026-02-04 11:00:54 - INFO - ================================================================================
+2026-02-04 11:00:54 - INFO - 源域训练集 (7 个): ['Bearing3_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled']
+2026-02-04 11:00:54 - INFO - 目标域训练集 (2 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 11:00:54 - INFO - 测试集 (2 个): ['Bearing1_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:00:54 - INFO - 源域(精简): Bearing2_1, Bearing2_4, Bearing3_1, Bearing3_5
+2026-02-04 11:00:54 - INFO - 目标域(精简): Bearing1_1, Bearing1_2
+2026-02-04 11:00:54 - INFO - 测试(精简): Bearing1_3, Bearing1_5
+2026-02-04 11:01:50 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/1_1_best_mscrgat_ensemble_3.pt
+2026-02-04 11:01:50 - INFO - 
+--- 训练 Ensemble 成员 5/5 (seed=4, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:01:50 - INFO - 
+================================================================================
+2026-02-04 11:01:50 - INFO - 📊 MSCRGAT 折 1/3 - 训练开始前数据划分
+2026-02-04 11:01:50 - INFO - ================================================================================
+2026-02-04 11:01:50 - INFO - 源域训练集 (7 个): ['Bearing3_4_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled']
+2026-02-04 11:01:50 - INFO - 目标域训练集 (2 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 11:01:50 - INFO - 测试集 (2 个): ['Bearing1_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:01:50 - INFO - 源域(精简): Bearing2_2, Bearing2_3, Bearing3_1, Bearing3_4, Bearing3_5
+2026-02-04 11:01:50 - INFO - 目标域(精简): Bearing1_1, Bearing1_2
+2026-02-04 11:01:50 - INFO - 测试(精简): Bearing1_3, Bearing1_5
+2026-02-04 11:03:21 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/1_1_best_mscrgat_ensemble_4.pt
+2026-02-04 11:03:21 - INFO - 
+--- Ensemble 推理 (5 个模型) ---
+2026-02-04 11:03:21 - INFO - 等渗回归校准：使用与测试集同工况的验证集 ['Bearing1_1_mscrgat_labeled']
+2026-02-04 11:03:21 - INFO - 校准集样本数: 46, 预测均值范围: [0.5175, 0.7906]
+2026-02-04 11:03:21 - INFO - 拟合等渗回归校准器并对测试集校准...
+2026-02-04 11:03:21 - INFO - 
+🔧 拟合等渗回归校准器...
+2026-02-04 11:03:21 - INFO - ✓ 校准器拟合完成
+2026-02-04 11:03:21 - INFO - 
+================================================================================
+2026-02-04 11:03:21 - INFO - 第二次测试（校准后）
+2026-02-04 11:03:21 - INFO - ================================================================================
+2026-02-04 11:03:21 - INFO - 
+📈 对测试集 Bearing1_3____rga___a_e_e 进行校准...
+2026-02-04 11:03:21 - INFO - 
+📊 校准后指标 (轴承: Bearing1_3____rga___a_e_e):
+2026-02-04 11:03:21 - INFO -   PICP: 0.969072
+2026-02-04 11:03:21 - INFO -   Coverage Error: 0.019072
+2026-02-04 11:03:21 - INFO -   NMPIW: 0.755799
+2026-02-04 11:03:21 - INFO -   MPIW: 0.748007
+2026-02-04 11:03:21 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated.csv
+2026-02-04 11:03:21 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:03:22 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated.png
+2026-02-04 11:03:22 - INFO - 
+📈 对测试集 Bearing1_5____rga___a_e_e 进行校准...
+2026-02-04 11:03:22 - INFO - 
+📊 校准后指标 (轴承: Bearing1_5____rga___a_e_e):
+2026-02-04 11:03:22 - INFO -   PICP: 1.000000
+2026-02-04 11:03:22 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:03:22 - INFO -   NMPIW: 1.075005
+2026-02-04 11:03:22 - INFO -   MPIW: 0.985421
+2026-02-04 11:03:22 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_5____rga___a_e_e_calibrated.csv
+2026-02-04 11:03:22 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_5____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:03:22 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_5____rga___a_e_e_calibrated.png
+2026-02-04 11:03:22 - INFO - 
+================================================================================
+2026-02-04 11:03:22 - INFO - 📊 MSCRGAT Ensemble 折 2/3 (ensemble_size=5, strategy=bagging)
+2026-02-04 11:03:22 - INFO - ================================================================================
+2026-02-04 11:03:22 - INFO - 源域: Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_5, Bearing3_1, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 11:03:22 - INFO - 目标域: Bearing2_1, Bearing2_2
+2026-02-04 11:03:22 - INFO - 测试: Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:03:22 - INFO - 
+--- 训练 Ensemble 成员 1/5 (seed=0, Bagging 采样 6/8 个轴承) ---
+2026-02-04 11:03:22 - INFO - 
+================================================================================
+2026-02-04 11:03:22 - INFO - 📊 MSCRGAT 折 2/3 - 训练开始前数据划分
+2026-02-04 11:03:22 - INFO - ================================================================================
+2026-02-04 11:03:22 - INFO - 源域训练集 (6 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:03:22 - INFO - 目标域训练集 (2 个): ['Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled']
+2026-02-04 11:03:22 - INFO - 测试集 (3 个): ['Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled']
+2026-02-04 11:03:22 - INFO - 源域(精简): Bearing1_1, Bearing1_5, Bearing3_1, Bearing3_3, Bearing3_5
+2026-02-04 11:03:22 - INFO - 目标域(精简): Bearing2_1, Bearing2_2
+2026-02-04 11:03:22 - INFO - 测试(精简): Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:04:00 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/2_2_best_mscrgat_ensemble_0.pt
+2026-02-04 11:04:00 - INFO - 
+--- 训练 Ensemble 成员 2/5 (seed=1, Bagging 采样 6/8 个轴承) ---
+2026-02-04 11:04:00 - INFO - 
+================================================================================
+2026-02-04 11:04:00 - INFO - 📊 MSCRGAT 折 2/3 - 训练开始前数据划分
+2026-02-04 11:04:00 - INFO - ================================================================================
+2026-02-04 11:04:00 - INFO - 源域训练集 (6 个): ['Bearing3_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 11:04:00 - INFO - 目标域训练集 (2 个): ['Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled']
+2026-02-04 11:04:00 - INFO - 测试集 (3 个): ['Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled']
+2026-02-04 11:04:00 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_5, Bearing3_1, Bearing3_3, Bearing3_5
+2026-02-04 11:04:00 - INFO - 目标域(精简): Bearing2_1, Bearing2_2
+2026-02-04 11:04:00 - INFO - 测试(精简): Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:04:56 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/2_2_best_mscrgat_ensemble_1.pt
+2026-02-04 11:04:56 - INFO - 
+--- 训练 Ensemble 成员 3/5 (seed=2, Bagging 采样 6/8 个轴承) ---
+2026-02-04 11:04:56 - INFO - 
+================================================================================
+2026-02-04 11:04:56 - INFO - 📊 MSCRGAT 折 2/3 - 训练开始前数据划分
+2026-02-04 11:04:56 - INFO - ================================================================================
+2026-02-04 11:04:56 - INFO - 源域训练集 (6 个): ['Bearing1_1_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:04:56 - INFO - 目标域训练集 (2 个): ['Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled']
+2026-02-04 11:04:56 - INFO - 测试集 (3 个): ['Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled']
+2026-02-04 11:04:56 - INFO - 源域(精简): Bearing1_1, Bearing1_5, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 11:04:56 - INFO - 目标域(精简): Bearing2_1, Bearing2_2
+2026-02-04 11:04:56 - INFO - 测试(精简): Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:05:34 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/2_2_best_mscrgat_ensemble_2.pt
+2026-02-04 11:05:34 - INFO - 
+--- 训练 Ensemble 成员 4/5 (seed=3, Bagging 采样 6/8 个轴承) ---
+2026-02-04 11:05:34 - INFO - 
+================================================================================
+2026-02-04 11:05:34 - INFO - 📊 MSCRGAT 折 2/3 - 训练开始前数据划分
+2026-02-04 11:05:34 - INFO - ================================================================================
+2026-02-04 11:05:34 - INFO - 源域训练集 (6 个): ['Bearing1_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled']
+2026-02-04 11:05:34 - INFO - 目标域训练集 (2 个): ['Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled']
+2026-02-04 11:05:34 - INFO - 测试集 (3 个): ['Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled']
+2026-02-04 11:05:34 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_5
+2026-02-04 11:05:34 - INFO - 目标域(精简): Bearing2_1, Bearing2_2
+2026-02-04 11:05:34 - INFO - 测试(精简): Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:06:12 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/2_2_best_mscrgat_ensemble_3.pt
+2026-02-04 11:06:12 - INFO - 
+--- 训练 Ensemble 成员 5/5 (seed=4, Bagging 采样 6/8 个轴承) ---
+2026-02-04 11:06:12 - INFO - 
+================================================================================
+2026-02-04 11:06:12 - INFO - 📊 MSCRGAT 折 2/3 - 训练开始前数据划分
+2026-02-04 11:06:12 - INFO - ================================================================================
+2026-02-04 11:06:12 - INFO - 源域训练集 (6 个): ['Bearing1_3_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled']
+2026-02-04 11:06:12 - INFO - 目标域训练集 (2 个): ['Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled']
+2026-02-04 11:06:12 - INFO - 测试集 (3 个): ['Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled']
+2026-02-04 11:06:12 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 11:06:12 - INFO - 目标域(精简): Bearing2_1, Bearing2_2
+2026-02-04 11:06:12 - INFO - 测试(精简): Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:07:08 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/2_2_best_mscrgat_ensemble_4.pt
+2026-02-04 11:07:08 - INFO - 
+--- Ensemble 推理 (5 个模型) ---
+2026-02-04 11:07:09 - INFO - 等渗回归校准：使用与测试集同工况的验证集 ['Bearing2_1_mscrgat_labeled']
+2026-02-04 11:07:09 - INFO - 校准集样本数: 35, 预测均值范围: [0.5012, 0.7492]
+2026-02-04 11:07:09 - INFO - 拟合等渗回归校准器并对测试集校准...
+2026-02-04 11:07:09 - INFO - 
+🔧 拟合等渗回归校准器...
+2026-02-04 11:07:09 - INFO - ✓ 校准器拟合完成
+2026-02-04 11:07:09 - INFO - 
+================================================================================
+2026-02-04 11:07:09 - INFO - 第二次测试（校准后）
+2026-02-04 11:07:09 - INFO - ================================================================================
+2026-02-04 11:07:09 - INFO - 
+📈 对测试集 Bearing2_3____rga___a_e_e 进行校准...
+2026-02-04 11:07:09 - INFO - 
+📊 校准后指标 (轴承: Bearing2_3____rga___a_e_e):
+2026-02-04 11:07:09 - INFO -   PICP: 0.995122
+2026-02-04 11:07:09 - INFO -   Coverage Error: 0.045122
+2026-02-04 11:07:09 - INFO -   NMPIW: 0.923522
+2026-02-04 11:07:09 - INFO -   MPIW: 0.919017
+2026-02-04 11:07:09 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_3____rga___a_e_e_calibrated.csv
+2026-02-04 11:07:09 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_3____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:07:09 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_3____rga___a_e_e_calibrated.png
+2026-02-04 11:07:09 - INFO - 
+📈 对测试集 Bearing2_4____rga___a_e_e 进行校准...
+2026-02-04 11:07:09 - INFO - 
+📊 校准后指标 (轴承: Bearing2_4____rga___a_e_e):
+2026-02-04 11:07:09 - INFO -   PICP: 1.000000
+2026-02-04 11:07:09 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:07:09 - INFO -   NMPIW: 1.045898
+2026-02-04 11:07:09 - INFO -   MPIW: 0.929687
+2026-02-04 11:07:09 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_4____rga___a_e_e_calibrated.csv
+2026-02-04 11:07:09 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_4____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:07:10 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_4____rga___a_e_e_calibrated.png
+2026-02-04 11:07:10 - INFO - 
+📈 对测试集 Bearing2_5____rga___a_e_e 进行校准...
+2026-02-04 11:07:10 - INFO - 
+📊 校准后指标 (轴承: Bearing2_5____rga___a_e_e):
+2026-02-04 11:07:10 - INFO -   PICP: 1.000000
+2026-02-04 11:07:10 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:07:10 - INFO -   NMPIW: 0.918546
+2026-02-04 11:07:10 - INFO -   MPIW: 0.913883
+2026-02-04 11:07:10 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_5____rga___a_e_e_calibrated.csv
+2026-02-04 11:07:10 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_5____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:07:10 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing2_5____rga___a_e_e_calibrated.png
+2026-02-04 11:07:10 - INFO - 
+================================================================================
+2026-02-04 11:07:10 - INFO - 📊 MSCRGAT Ensemble 折 3/3 (ensemble_size=5, strategy=bagging)
+2026-02-04 11:07:10 - INFO - ================================================================================
+2026-02-04 11:07:10 - INFO - 源域: Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_5, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:07:10 - INFO - 目标域: Bearing3_1, Bearing3_4
+2026-02-04 11:07:10 - INFO - 测试: Bearing3_3, Bearing3_5
+2026-02-04 11:07:10 - INFO - 
+--- 训练 Ensemble 成员 1/5 (seed=0, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:07:10 - INFO - 
+================================================================================
+2026-02-04 11:07:10 - INFO - 📊 MSCRGAT 折 3/3 - 训练开始前数据划分
+2026-02-04 11:07:10 - INFO - ================================================================================
+2026-02-04 11:07:10 - INFO - 源域训练集 (7 个): ['Bearing2_2_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled']
+2026-02-04 11:07:10 - INFO - 目标域训练集 (2 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled']
+2026-02-04 11:07:10 - INFO - 测试集 (2 个): ['Bearing3_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled']
+2026-02-04 11:07:10 - INFO - 源域(精简): Bearing1_1, Bearing1_5, Bearing2_2, Bearing2_4
+2026-02-04 11:07:10 - INFO - 目标域(精简): Bearing3_1, Bearing3_4
+2026-02-04 11:07:10 - INFO - 测试(精简): Bearing3_3, Bearing3_5
+2026-02-04 11:07:33 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/3_3_best_mscrgat_ensemble_0.pt
+2026-02-04 11:07:33 - INFO - 
+--- 训练 Ensemble 成员 2/5 (seed=1, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:07:33 - INFO - 
+================================================================================
+2026-02-04 11:07:33 - INFO - 📊 MSCRGAT 折 3/3 - 训练开始前数据划分
+2026-02-04 11:07:33 - INFO - ================================================================================
+2026-02-04 11:07:33 - INFO - 源域训练集 (7 个): ['Bearing2_2_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled']
+2026-02-04 11:07:33 - INFO - 目标域训练集 (2 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled']
+2026-02-04 11:07:33 - INFO - 测试集 (2 个): ['Bearing3_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled']
+2026-02-04 11:07:33 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing2_2, Bearing2_4, Bearing2_5
+2026-02-04 11:07:33 - INFO - 目标域(精简): Bearing3_1, Bearing3_4
+2026-02-04 11:07:33 - INFO - 测试(精简): Bearing3_3, Bearing3_5
+2026-02-04 11:08:13 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/3_3_best_mscrgat_ensemble_1.pt
+2026-02-04 11:08:14 - INFO - 
+--- 训练 Ensemble 成员 3/5 (seed=2, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:08:14 - INFO - 
+================================================================================
+2026-02-04 11:08:14 - INFO - 📊 MSCRGAT 折 3/3 - 训练开始前数据划分
+2026-02-04 11:08:14 - INFO - ================================================================================
+2026-02-04 11:08:14 - INFO - 源域训练集 (7 个): ['Bearing2_5_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled']
+2026-02-04 11:08:14 - INFO - 目标域训练集 (2 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled']
+2026-02-04 11:08:14 - INFO - 测试集 (2 个): ['Bearing3_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled']
+2026-02-04 11:08:14 - INFO - 源域(精简): Bearing1_3, Bearing2_3, Bearing2_4, Bearing2_5
+2026-02-04 11:08:14 - INFO - 目标域(精简): Bearing3_1, Bearing3_4
+2026-02-04 11:08:14 - INFO - 测试(精简): Bearing3_3, Bearing3_5
+2026-02-04 11:09:13 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/3_3_best_mscrgat_ensemble_2.pt
+2026-02-04 11:09:13 - INFO - 
+--- 训练 Ensemble 成员 4/5 (seed=3, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:09:13 - INFO - 
+================================================================================
+2026-02-04 11:09:13 - INFO - 📊 MSCRGAT 折 3/3 - 训练开始前数据划分
+2026-02-04 11:09:13 - INFO - ================================================================================
+2026-02-04 11:09:13 - INFO - 源域训练集 (7 个): ['Bearing2_5_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:09:13 - INFO - 目标域训练集 (2 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled']
+2026-02-04 11:09:13 - INFO - 测试集 (2 个): ['Bearing3_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled']
+2026-02-04 11:09:13 - INFO - 源域(精简): Bearing1_1, Bearing1_5, Bearing2_2, Bearing2_5
+2026-02-04 11:09:13 - INFO - 目标域(精简): Bearing3_1, Bearing3_4
+2026-02-04 11:09:13 - INFO - 测试(精简): Bearing3_3, Bearing3_5
+2026-02-04 11:09:54 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/3_3_best_mscrgat_ensemble_3.pt
+2026-02-04 11:09:54 - INFO - 
+--- 训练 Ensemble 成员 5/5 (seed=4, Bagging 采样 7/9 个轴承) ---
+2026-02-04 11:09:54 - INFO - 
+================================================================================
+2026-02-04 11:09:54 - INFO - 📊 MSCRGAT 折 3/3 - 训练开始前数据划分
+2026-02-04 11:09:54 - INFO - ================================================================================
+2026-02-04 11:09:54 - INFO - 源域训练集 (7 个): ['Bearing2_4_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled']
+2026-02-04 11:09:54 - INFO - 目标域训练集 (2 个): ['Bearing3_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled']
+2026-02-04 11:09:54 - INFO - 测试集 (2 个): ['Bearing3_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled']
+2026-02-04 11:09:54 - INFO - 源域(精简): Bearing1_2, Bearing1_3, Bearing2_2, Bearing2_4, Bearing2_5
+2026-02-04 11:09:54 - INFO - 目标域(精简): Bearing3_1, Bearing3_4
+2026-02-04 11:09:54 - INFO - 测试(精简): Bearing3_3, Bearing3_5
+2026-02-04 11:10:35 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/3_3_best_mscrgat_ensemble_4.pt
+2026-02-04 11:10:35 - INFO - 
+--- Ensemble 推理 (5 个模型) ---
+2026-02-04 11:10:36 - INFO - 等渗回归校准：使用与测试集同工况的验证集 ['Bearing3_1_mscrgat_labeled']
+2026-02-04 11:10:36 - INFO - 校准集样本数: 193, 预测均值范围: [0.5002, 0.7643]
+2026-02-04 11:10:36 - INFO - 拟合等渗回归校准器并对测试集校准...
+2026-02-04 11:10:36 - INFO - 
+🔧 拟合等渗回归校准器...
+2026-02-04 11:10:36 - INFO - ✓ 校准器拟合完成
+2026-02-04 11:10:36 - INFO - 
+================================================================================
+2026-02-04 11:10:36 - INFO - 第二次测试（校准后）
+2026-02-04 11:10:36 - INFO - ================================================================================
+2026-02-04 11:10:36 - INFO - 
+📈 对测试集 Bearing3_3____rga___a_e_e 进行校准...
+2026-02-04 11:10:36 - INFO - 
+📊 校准后指标 (轴承: Bearing3_3____rga___a_e_e):
+2026-02-04 11:10:36 - INFO -   PICP: 1.000000
+2026-02-04 11:10:36 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:10:36 - INFO -   NMPIW: 0.958222
+2026-02-04 11:10:36 - INFO -   MPIW: 0.926282
+2026-02-04 11:10:36 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing3_3____rga___a_e_e_calibrated.csv
+2026-02-04 11:10:36 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing3_3____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:10:36 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing3_3____rga___a_e_e_calibrated.png
+2026-02-04 11:10:36 - INFO - 
+📈 对测试集 Bearing3_5____rga___a_e_e 进行校准...
+2026-02-04 11:10:36 - INFO - 
+📊 校准后指标 (轴承: Bearing3_5____rga___a_e_e):
+2026-02-04 11:10:36 - INFO -   PICP: 1.000000
+2026-02-04 11:10:36 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:10:36 - INFO -   NMPIW: 0.912276
+2026-02-04 11:10:36 - INFO -   MPIW: 0.903504
+2026-02-04 11:10:36 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing3_5____rga___a_e_e_calibrated.csv
+2026-02-04 11:10:36 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing3_5____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:10:37 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing3_5____rga___a_e_e_calibrated.png
+2026-02-04 11:10:37 - INFO - 
+================================================================================
+✅ Ensemble 全部完成
+================================================================================
+2026-02-04 11:10:37 - INFO - 总时间: 13.4分钟
+2026-02-04 11:10:37 - INFO - 
+🚀 任务: xjtu_made_mscrgat -> femto_made_mscrgat (Ensemble)
+2026-02-04 11:10:37 - INFO - 设备: cuda, ensemble_size: 5, ensemble_strategy: bagging
+2026-02-04 11:10:37 - INFO - 训练数据集: xjtu_made_mscrgat, 测试数据集: femto_made_mscrgat
+2026-02-04 11:10:37 - INFO - 验证集轴承(用于校准): ['Bearing1_1_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled']
+2026-02-04 11:10:37 - INFO - 总轮数: 1
+2026-02-04 11:10:37 - INFO - 
+================================================================================
+2026-02-04 11:10:37 - INFO - 📊 MSCRGAT Ensemble 折 1/1 (ensemble_size=5, strategy=bagging)
+2026-02-04 11:10:37 - INFO - ================================================================================
+2026-02-04 11:10:37 - INFO - 源域: Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing3_1, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 11:10:37 - INFO - 目标域: Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7
+2026-02-04 11:10:37 - INFO - 测试: Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing2_6, Bearing2_7, Bearing3_1, Bearing3_2, Bearing3_3
+2026-02-04 11:10:37 - INFO - 
+--- 训练 Ensemble 成员 1/5 (seed=0, Bagging 采样 16/20 个轴承) ---
+2026-02-04 11:10:37 - INFO - 
+================================================================================
+2026-02-04 11:10:37 - INFO - 📊 MSCRGAT 折 1/1 - 训练开始前数据划分
+2026-02-04 11:10:37 - INFO - ================================================================================
+2026-02-04 11:10:37 - INFO - 源域训练集 (16 个): ['Bearing3_5_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled']
+2026-02-04 11:10:37 - INFO - 目标域训练集 (7 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled']
+2026-02-04 11:10:37 - INFO - 测试集 (17 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_6_mscrgat_labeled', 'Bearing2_7_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_2_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled']
+2026-02-04 11:10:37 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_3, Bearing2_4, Bearing3_1, Bearing3_5
+2026-02-04 11:10:37 - INFO - 目标域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7
+2026-02-04 11:10:37 - INFO - 测试(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing2_6, Bearing2_7, Bearing3_1, Bearing3_2, Bearing3_3
+2026-02-04 11:11:09 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/cross_domain_cross_domain_best_mscrgat_ensemble_0.pt
+2026-02-04 11:11:09 - INFO - 
+--- 训练 Ensemble 成员 2/5 (seed=1, Bagging 采样 16/20 个轴承) ---
+2026-02-04 11:11:09 - INFO - 
+================================================================================
+2026-02-04 11:11:09 - INFO - 📊 MSCRGAT 折 1/1 - 训练开始前数据划分
+2026-02-04 11:11:09 - INFO - ================================================================================
+2026-02-04 11:11:09 - INFO - 源域训练集 (16 个): ['Bearing2_2_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled']
+2026-02-04 11:11:09 - INFO - 目标域训练集 (7 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled']
+2026-02-04 11:11:09 - INFO - 测试集 (17 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_6_mscrgat_labeled', 'Bearing2_7_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_2_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled']
+2026-02-04 11:11:09 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_6, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing3_1, Bearing3_4, Bearing3_5
+2026-02-04 11:11:09 - INFO - 目标域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7
+2026-02-04 11:11:09 - INFO - 测试(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing2_6, Bearing2_7, Bearing3_1, Bearing3_2, Bearing3_3
+2026-02-04 11:11:42 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/cross_domain_cross_domain_best_mscrgat_ensemble_1.pt
+2026-02-04 11:11:42 - INFO - 
+--- 训练 Ensemble 成员 3/5 (seed=2, Bagging 采样 16/20 个轴承) ---
+2026-02-04 11:11:42 - INFO - 
+================================================================================
+2026-02-04 11:11:42 - INFO - 📊 MSCRGAT 折 1/1 - 训练开始前数据划分
+2026-02-04 11:11:42 - INFO - ================================================================================
+2026-02-04 11:11:42 - INFO - 源域训练集 (16 个): ['Bearing2_5_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:11:42 - INFO - 目标域训练集 (7 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled']
+2026-02-04 11:11:42 - INFO - 测试集 (17 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_6_mscrgat_labeled', 'Bearing2_7_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_2_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled']
+2026-02-04 11:11:42 - INFO - 源域(精简): Bearing1_1, Bearing1_3, Bearing1_5, Bearing1_6, Bearing2_2, Bearing2_4, Bearing2_5, Bearing3_4
+2026-02-04 11:11:42 - INFO - 目标域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7
+2026-02-04 11:11:42 - INFO - 测试(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing2_6, Bearing2_7, Bearing3_1, Bearing3_2, Bearing3_3
+2026-02-04 11:12:15 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/cross_domain_cross_domain_best_mscrgat_ensemble_2.pt
+2026-02-04 11:12:15 - INFO - 
+--- 训练 Ensemble 成员 4/5 (seed=3, Bagging 采样 16/20 个轴承) ---
+2026-02-04 11:12:15 - INFO - 
+================================================================================
+2026-02-04 11:12:15 - INFO - 📊 MSCRGAT 折 1/1 - 训练开始前数据划分
+2026-02-04 11:12:15 - INFO - ================================================================================
+2026-02-04 11:12:15 - INFO - 源域训练集 (16 个): ['Bearing3_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing3_4_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled']
+2026-02-04 11:12:15 - INFO - 目标域训练集 (7 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled']
+2026-02-04 11:12:15 - INFO - 测试集 (17 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_6_mscrgat_labeled', 'Bearing2_7_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_2_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled']
+2026-02-04 11:12:15 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_5, Bearing1_7, Bearing2_3, Bearing2_4, Bearing2_5, Bearing3_1, Bearing3_3, Bearing3_4, Bearing3_5
+2026-02-04 11:12:15 - INFO - 目标域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7
+2026-02-04 11:12:15 - INFO - 测试(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing2_6, Bearing2_7, Bearing3_1, Bearing3_2, Bearing3_3
+2026-02-04 11:12:48 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/cross_domain_cross_domain_best_mscrgat_ensemble_3.pt
+2026-02-04 11:12:48 - INFO - 
+--- 训练 Ensemble 成员 5/5 (seed=4, Bagging 采样 16/20 个轴承) ---
+2026-02-04 11:12:48 - INFO - 
+================================================================================
+2026-02-04 11:12:48 - INFO - 📊 MSCRGAT 折 1/1 - 训练开始前数据划分
+2026-02-04 11:12:48 - INFO - ================================================================================
+2026-02-04 11:12:48 - INFO - 源域训练集 (16 个): ['Bearing1_2_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing1_1_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing3_5_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled']
+2026-02-04 11:12:48 - INFO - 目标域训练集 (7 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled']
+2026-02-04 11:12:48 - INFO - 测试集 (17 个): ['Bearing1_1_mscrgat_labeled', 'Bearing1_2_mscrgat_labeled', 'Bearing1_3_mscrgat_labeled', 'Bearing1_4_mscrgat_labeled', 'Bearing1_5_mscrgat_labeled', 'Bearing1_6_mscrgat_labeled', 'Bearing1_7_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing2_2_mscrgat_labeled', 'Bearing2_3_mscrgat_labeled', 'Bearing2_4_mscrgat_labeled', 'Bearing2_5_mscrgat_labeled', 'Bearing2_6_mscrgat_labeled', 'Bearing2_7_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled', 'Bearing3_2_mscrgat_labeled', 'Bearing3_3_mscrgat_labeled']
+2026-02-04 11:12:48 - INFO - 源域(精简): Bearing1_1, Bearing1_2, Bearing1_5, Bearing1_6, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing3_1, Bearing3_3, Bearing3_5
+2026-02-04 11:12:48 - INFO - 目标域(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7
+2026-02-04 11:12:48 - INFO - 测试(精简): Bearing1_1, Bearing1_2, Bearing1_3, Bearing1_4, Bearing1_5, Bearing1_6, Bearing1_7, Bearing2_1, Bearing2_2, Bearing2_3, Bearing2_4, Bearing2_5, Bearing2_6, Bearing2_7, Bearing3_1, Bearing3_2, Bearing3_3
+2026-02-04 11:13:20 - INFO - 最佳模型（训练 loss 最低）已保存: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/cross_domain_cross_domain_best_mscrgat_ensemble_4.pt
+2026-02-04 11:13:20 - INFO - 
+--- Ensemble 推理 (5 个模型) ---
+2026-02-04 11:13:22 - INFO - 等渗回归校准：使用与测试集同工况的验证集 ['Bearing1_1_mscrgat_labeled', 'Bearing2_1_mscrgat_labeled', 'Bearing3_1_mscrgat_labeled']
+2026-02-04 11:13:22 - INFO - 校准集样本数: 1586, 预测均值范围: [0.5001, 0.7595]
+2026-02-04 11:13:22 - INFO - 拟合等渗回归校准器并对测试集校准...
+2026-02-04 11:13:22 - INFO - 
+🔧 拟合等渗回归校准器...
+2026-02-04 11:13:22 - INFO - ✓ 校准器拟合完成
+2026-02-04 11:13:22 - INFO - 
+================================================================================
+2026-02-04 11:13:22 - INFO - 第二次测试（校准后）
+2026-02-04 11:13:22 - INFO - ================================================================================
+2026-02-04 11:13:22 - INFO - 
+📈 对测试集 Bearing1_1____rga___a_e_e 进行校准...
+2026-02-04 11:13:22 - INFO - 
+📊 校准后指标 (轴承: Bearing1_1____rga___a_e_e):
+2026-02-04 11:13:22 - INFO -   PICP: 1.000000
+2026-02-04 11:13:22 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:13:22 - INFO -   NMPIW: 0.918620
+2026-02-04 11:13:22 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:22 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_1____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:22 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_1____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:22 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_1____rga___a_e_e_calibrated.png
+2026-02-04 11:13:22 - INFO - 
+📈 对测试集 Bearing1_2____rga___a_e_e 进行校准...
+2026-02-04 11:13:22 - INFO - 
+📊 校准后指标 (轴承: Bearing1_2____rga___a_e_e):
+2026-02-04 11:13:22 - INFO -   PICP: 1.000000
+2026-02-04 11:13:22 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:13:22 - INFO -   NMPIW: 0.939351
+2026-02-04 11:13:22 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:22 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_2____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:22 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_2____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:23 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_2____rga___a_e_e_calibrated.png
+2026-02-04 11:13:23 - INFO - 
+📈 对测试集 Bearing1_3____rga___a_e_e 进行校准...
+2026-02-04 11:13:23 - INFO - 
+📊 校准后指标 (轴承: Bearing1_3____rga___a_e_e):
+2026-02-04 11:13:23 - INFO -   PICP: 0.998457
+2026-02-04 11:13:23 - INFO -   Coverage Error: 0.048457
+2026-02-04 11:13:23 - INFO -   NMPIW: 0.919421
+2026-02-04 11:13:23 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:23 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:23 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:23 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated.png
+2026-02-04 11:13:23 - INFO - 
+📈 对测试集 Bearing1_4____rga___a_e_e 进行校准...
+2026-02-04 11:13:23 - INFO - 
+📊 校准后指标 (轴承: Bearing1_4____rga___a_e_e):
+2026-02-04 11:13:23 - INFO -   PICP: 1.000000
+2026-02-04 11:13:23 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:13:23 - INFO -   NMPIW: 0.920671
+2026-02-04 11:13:23 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:23 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_4____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:23 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_4____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:24 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_4____rga___a_e_e_calibrated.png
+2026-02-04 11:13:24 - INFO - 
+📈 对测试集 Bearing1_5____rga___a_e_e 进行校准...
+2026-02-04 11:13:24 - INFO - 
+📊 校准后指标 (轴承: Bearing1_5____rga___a_e_e):
+2026-02-04 11:13:24 - INFO -   PICP: 1.000000
+2026-02-04 11:13:24 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:13:24 - INFO -   NMPIW: 0.936737
+2026-02-04 11:13:24 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:24 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_5____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:24 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_5____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:24 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_5____rga___a_e_e_calibrated.png
+2026-02-04 11:13:24 - INFO - 
+📈 对测试集 Bearing1_6____rga___a_e_e 进行校准...
+2026-02-04 11:13:24 - INFO - 
+📊 校准后指标 (轴承: Bearing1_6____rga___a_e_e):
+2026-02-04 11:13:24 - INFO -   PICP: 0.915441
+2026-02-04 11:13:24 - INFO -   Coverage Error: 0.034559
+2026-02-04 11:13:24 - INFO -   NMPIW: 0.919129
+2026-02-04 11:13:24 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:25 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_6____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:25 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_6____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:25 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_6____rga___a_e_e_calibrated.png
+2026-02-04 11:13:25 - INFO - 
+📈 对测试集 Bearing1_7____rga___a_e_e 进行校准...
+2026-02-04 11:13:25 - INFO - 
+📊 校准后指标 (轴承: Bearing1_7____rga___a_e_e):
+2026-02-04 11:13:25 - INFO -   PICP: 0.979167
+2026-02-04 11:13:25 - INFO -   Coverage Error: 0.029167
+2026-02-04 11:13:25 - INFO -   NMPIW: 0.937535
+2026-02-04 11:13:25 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:25 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_7____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:25 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_7____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:26 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_7____rga___a_e_e_calibrated.png
+2026-02-04 11:13:26 - INFO - 
+📈 对测试集 Bearing2_1____rga___a_e_e 进行校准...
+2026-02-04 11:13:26 - INFO - 
+📊 校准后指标 (轴承: Bearing2_1____rga___a_e_e):
+2026-02-04 11:13:26 - INFO -   PICP: 1.000000
+2026-02-04 11:13:26 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:13:26 - INFO -   NMPIW: 0.930578
+2026-02-04 11:13:26 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:26 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_1____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:26 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_1____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:26 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_1____rga___a_e_e_calibrated.png
+2026-02-04 11:13:26 - INFO - 
+📈 对测试集 Bearing2_2____rga___a_e_e 进行校准...
+2026-02-04 11:13:26 - INFO - 
+📊 校准后指标 (轴承: Bearing2_2____rga___a_e_e):
+2026-02-04 11:13:26 - INFO -   PICP: 0.500000
+2026-02-04 11:13:26 - INFO -   Coverage Error: 0.450000
+2026-02-04 11:13:26 - INFO -   NMPIW: 1.101603
+2026-02-04 11:13:26 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:26 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_2____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:26 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_2____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:27 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_2____rga___a_e_e_calibrated.png
+2026-02-04 11:13:27 - INFO - 
+📈 对测试集 Bearing2_3____rga___a_e_e 进行校准...
+2026-02-04 11:13:27 - INFO - 
+📊 校准后指标 (轴承: Bearing2_3____rga___a_e_e):
+2026-02-04 11:13:27 - INFO -   PICP: 0.887660
+2026-02-04 11:13:27 - INFO -   Coverage Error: 0.062340
+2026-02-04 11:13:27 - INFO -   NMPIW: 0.918785
+2026-02-04 11:13:27 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:27 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_3____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:27 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_3____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:27 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_3____rga___a_e_e_calibrated.png
+2026-02-04 11:13:27 - INFO - 
+📈 对测试集 Bearing2_4____rga___a_e_e 进行校准...
+2026-02-04 11:13:27 - INFO - 
+📊 校准后指标 (轴承: Bearing2_4____rga___a_e_e):
+2026-02-04 11:13:27 - INFO -   PICP: 0.753316
+2026-02-04 11:13:27 - INFO -   Coverage Error: 0.196684
+2026-02-04 11:13:27 - INFO -   NMPIW: 0.920444
+2026-02-04 11:13:27 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:27 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_4____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:27 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_4____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:28 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_4____rga___a_e_e_calibrated.png
+2026-02-04 11:13:28 - INFO - 
+📈 对测试集 Bearing2_5____rga___a_e_e 进行校准...
+2026-02-04 11:13:28 - INFO - 
+📊 校准后指标 (轴承: Bearing2_5____rga___a_e_e):
+2026-02-04 11:13:28 - INFO -   PICP: 0.575105
+2026-02-04 11:13:28 - INFO -   Coverage Error: 0.374895
+2026-02-04 11:13:28 - INFO -   NMPIW: 0.918485
+2026-02-04 11:13:28 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:28 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_5____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:28 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_5____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:29 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_5____rga___a_e_e_calibrated.png
+2026-02-04 11:13:29 - INFO - 
+📈 对测试集 Bearing2_6____rga___a_e_e 进行校准...
+2026-02-04 11:13:29 - INFO - 
+📊 校准后指标 (轴承: Bearing2_6____rga___a_e_e):
+2026-02-04 11:13:29 - INFO -   PICP: 0.968992
+2026-02-04 11:13:29 - INFO -   Coverage Error: 0.018992
+2026-02-04 11:13:29 - INFO -   NMPIW: 0.921575
+2026-02-04 11:13:29 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:29 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_6____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:29 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_6____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:29 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_6____rga___a_e_e_calibrated.png
+2026-02-04 11:13:29 - INFO - 
+📈 对测试集 Bearing2_7____rga___a_e_e 进行校准...
+2026-02-04 11:13:29 - INFO - 
+📊 校准后指标 (轴承: Bearing2_7____rga___a_e_e):
+2026-02-04 11:13:29 - INFO -   PICP: 0.940299
+2026-02-04 11:13:29 - INFO -   Coverage Error: 0.009701
+2026-02-04 11:13:29 - INFO -   NMPIW: 0.931912
+2026-02-04 11:13:29 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:29 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_7____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:29 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_7____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:30 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing2_7____rga___a_e_e_calibrated.png
+2026-02-04 11:13:30 - INFO - 
+📈 对测试集 Bearing3_1____rga___a_e_e 进行校准...
+2026-02-04 11:13:30 - INFO - 
+📊 校准后指标 (轴承: Bearing3_1____rga___a_e_e):
+2026-02-04 11:13:30 - INFO -   PICP: 0.958333
+2026-02-04 11:13:30 - INFO -   Coverage Error: 0.008333
+2026-02-04 11:13:30 - INFO -   NMPIW: 0.957916
+2026-02-04 11:13:30 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:30 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_1____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:30 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_1____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:30 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_1____rga___a_e_e_calibrated.png
+2026-02-04 11:13:30 - INFO - 
+📈 对测试集 Bearing3_2____rga___a_e_e 进行校准...
+2026-02-04 11:13:30 - INFO - 
+📊 校准后指标 (轴承: Bearing3_2____rga___a_e_e):
+2026-02-04 11:13:30 - INFO -   PICP: 0.984211
+2026-02-04 11:13:30 - INFO -   Coverage Error: 0.034211
+2026-02-04 11:13:30 - INFO -   NMPIW: 0.922860
+2026-02-04 11:13:30 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:30 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_2____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:30 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_2____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:31 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_2____rga___a_e_e_calibrated.png
+2026-02-04 11:13:31 - INFO - 
+📈 对测试集 Bearing3_3____rga___a_e_e 进行校准...
+2026-02-04 11:13:31 - INFO - 
+📊 校准后指标 (轴承: Bearing3_3____rga___a_e_e):
+2026-02-04 11:13:31 - INFO -   PICP: 1.000000
+2026-02-04 11:13:31 - INFO -   Coverage Error: 0.050000
+2026-02-04 11:13:31 - INFO -   NMPIW: 0.926348
+2026-02-04 11:13:31 - INFO -   MPIW: 0.918003
+2026-02-04 11:13:31 - INFO - ✓ 校准后数据已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_3____rga___a_e_e_calibrated.csv
+2026-02-04 11:13:31 - INFO - ✓ 校准后指标已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_3____rga___a_e_e_calibrated_metrics.csv
+2026-02-04 11:13:31 - INFO - ✓ 校准后图片已保存到: /mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing3_3____rga___a_e_e_calibrated.png
+2026-02-04 11:13:31 - INFO - 
+================================================================================
+✅ Ensemble 全部完成
+================================================================================
+2026-02-04 11:13:31 - INFO - 总时间: 2.9分钟

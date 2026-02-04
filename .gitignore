@@ -1,0 +1,16 @@
+# 1. datasetresult 文件夹下全部
+datasetresult/
+
+# 2. auto_ 开头的全部文件夹（含子目录中的）
+**/auto_*/
+**/画图对比*/
+# 3. 全部 png、svg 文件
+*.png
+*.svg
+*.csv
+*.pdf
+# 4. 全部 .pt 结尾文件
+*.pt
+
+# 系统生成的核心转储，避免误提交
+core

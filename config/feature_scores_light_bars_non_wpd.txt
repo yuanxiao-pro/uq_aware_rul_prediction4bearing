@@ -1,0 +1,11 @@
+# 除 WPD（F24–F32）外，light_bar_features 对应的特征名（Table 4）
+# 筛选结果：特征码 -> 特征名
+
+F1: Maximum
+F2: Minimum
+F4: RMSE
+F7: Kurtosis
+F9: Impulse Factor
+F17: Spectral Kurtosis
+F20: Dominant Frequency
+F21: Dominant Amplitude

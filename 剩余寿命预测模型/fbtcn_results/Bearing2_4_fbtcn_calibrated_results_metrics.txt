@@ -1,0 +1,18 @@
+指标计算结果 (置信水平: 95.0%)
+============================================================
+MAE   (Mean Absolute Error): 0.119044
+      (越小越好)
+
+RMSE  (Root Mean Squared Error): 0.130635
+      (越小越好)
+
+PICP  (Prediction Interval Coverage Probability): 1.000000
+      目标覆盖率: 0.9500
+      覆盖率误差: 0.050000
+
+NMPIW (Normalized Mean Prediction Interval Width): 0.524523
+      真实值范围 R: 0.888889
+
+CWC   (Coverage Width-based Criterion): 0.524523
+      (越小越好)
+============================================================

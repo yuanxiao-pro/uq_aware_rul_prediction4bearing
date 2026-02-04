@@ -1,0 +1,72 @@
+/mnt/uq_aware_rul_prediction4bearing-main/剩余寿命预测模型/FBTCN预测模型/auto_train_fbtcn_sa.py
+
+D-64:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_batch64.json
+
+D-128:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_batch128.json
+
+D-256:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_batch256.json
+
+D-512:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_batch512.json
+
+D-1024:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir.json
+
+D-lr001:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_lr001.json
+
+D-lr005:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_lr005.json
+
+D-seed0:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_seed0.json
+
+D-seed1:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_seed1.json
+
+D-rds2:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_rds2.json
+
+D-rds3:
+--config_path ../../config/ablation/D_fbtcn_config_ablation_no_ir_rds3.json
+
+A:
+--config_path ../../config/ablation/A_fbtcn_config_ablation_no_rds.json
+
+A-seed0:
+--config_path ../../config/ablation/A_fbtcn_config_ablation_no_rds_seed0.json
+
+A-sa_revise:
+--config_path ../../config/ablation/A_fbtcn_config_ablation_no_rds_sa_revise.json
+
+C:
+--config_path ../../config/ablation/C_fbtcn_config_ablation_compact.json
+
+E:
+--config_path ../../config/ablation/E_fbtcn_config_ablation_no_crps_ir.json
+
+E-no_rds:
+--config_path ../../config/ablation/E_fbtcn_config_ablation_no_crps_ir_no_rds.json
+
+F:
+--config_path ../../config/ablation/F_fbtcn_config_ablation_no_sa.json
+
+F no_rds:
+--config_path ../../config/ablation/F_fbtcn_config_ablation_no_sa_no_rds.json
+
+G no_fkl:
+--config_path ../../config/ablation/G_fbtcn_config_ablation_no_fkl.json
+
+myexp:
+--config_path ../../config/Z_fbtcn_config_myexp.json
+
+
+/mnt/uq_aware_rul_prediction4bearing-main/剩余寿命预测模型/FBTCN预测模型/auto_train_mscrgat.py
+
+--config_path ../../config/baseline/adversarial_mscrgat_config.json
+
+/mnt/uq_aware_rul_prediction4bearing-main/剩余寿命预测模型/FBTCN预测模型/auto_train_mscrgat_ensemble.py
+--config_path ../../config/baseline/ens_mscrgat_config_seed0.json

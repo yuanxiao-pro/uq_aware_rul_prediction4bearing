@@ -1,0 +1,20 @@
+{
+    "batch_size": 1024,
+    "test_batch_size": 16,
+    "window_size": 1,
+    "train_bearings": ["Bearing1_2", "Bearing1_3", "Bearing1_4", "Bearing1_5", 
+                "Bearing2_1", "Bearing2_2", "Bearing2_3", "Bearing2_4", "Bearing2_5",
+                "Bearing3_1", "Bearing3_2", "Bearing3_3", "Bearing3_4", "Bearing3_5"],
+    "test_bearings": ["Bearing1_1"],
+    "context_bearings": ["Bearing1_3"],
+    "validation_bearings": ["Bearing1_4", "Bearing2_5", "Bearing3_2"], 
+    "input_dim": 11,
+    "output_dim": 1,
+    "conv_archs": [32, 64],
+    "hidden_layer_sizes": [64, 128],
+    "epochs": 1000,
+    "learn_rate": 0.01,
+    "seed": 0,
+    "patience": "inf",
+    "opt": "Adam"
+}
