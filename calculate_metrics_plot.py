@@ -138,7 +138,8 @@ def plot_predictions_from_csv(csv_path, save_path=None, figsize=(10, 6)):
 
 def main():
     # 默认使用 Bearing1_3 ensemble 结果：metrics 文件仅含汇总指标，画图会从同目录 _predictions.csv 读入
-    csv_path = '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_3____rga___a_e_e_mscrgat_ensemble_metrics.csv'
+    # csv_path = '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging/Bearing1_3____rga___a_e_e_calibrated.csv'
+    csv_path = '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging/Bearing1_7____rga___a_e_e_calibrated.csv'
     
     if not os.path.exists(csv_path):
         print(f"错误：文件不存在: {csv_path}")

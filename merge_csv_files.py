@@ -251,7 +251,7 @@ def get_bearing_csv_files_from_dir(mode, directory):
     elif mode == "after":
         patterns = [
             r'Bearing\d+_\d+_calibrated_metrics\.csv$',  # Bearing*_*_calibrated.csv 模式
-            r'c\d+_Bearing\d+_\d+_calibrated_metrics\.csv$',  # c*_Bearing*_*_calibrated.csv 模式
+            r'Bearing\d+_\d+.*_calibrated_metrics\.csv$',  # Bearing1_3____rga___a_e_e_calibrated.csv 模式
         ]
     else:
         raise ValueError(f"Invalid mode: {mode}")
@@ -599,5 +599,5 @@ if __name__ == "__main__":
             '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging',
         ]
         metrics_df = main("before", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/metrics_summary_xjtu_to_xjtu_ensemble_bagging_seed0.csv")
-        metrics_df = main("after", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/A_no_rds_sa_revise/metrics_summary_A_no_rds_sa_revise_calibrated.csv")
+        metrics_df = main("after", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/metrics_summary_xjtu_to_xjtu_ensemble_bagging_seed0_calibrated.csv")
         
