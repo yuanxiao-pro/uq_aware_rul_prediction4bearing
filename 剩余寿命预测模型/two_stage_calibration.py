@@ -27,10 +27,8 @@ from prediction_interval_calibration import (
 class TwoStageCalibrator(PredictionIntervalCalibrator):
     """
     两步校准器
-    
     先使用方差缩放校准，然后使用保序回归校准。
     """
-    
     def __init__(self, alpha: float = 0.05):
         """
         Args:

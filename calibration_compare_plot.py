@@ -194,6 +194,73 @@ def load_post_calibration(path: str):
     return y_true, mu, var
 
 
+def main_before_after(result_base_dir: str, calibrated_dir: str, out_fig_dir: str, n_bins: int = 20):
+    """
+    根据「校准前 *_result.csv」与「校准后 *_calibrated.csv」批量绘制校准前后可靠性图，
+    每张图仅两条曲线（校准前、校准后）+ 理想对角线，保存到 out_fig_dir（新建文件夹）。
+    """
+    os.makedirs(out_fig_dir, exist_ok=True)
+    collected = []
+    for subdir_name in sorted(os.listdir(calibrated_dir)):
+        subdir_path = os.path.join(calibrated_dir, subdir_name)
+        if not os.path.isdir(subdir_path):
+            continue
+        for fname in sorted(os.listdir(subdir_path)):
+            if not fname.endswith("_calibrated.csv"):
+                continue
+            stem = fname[:-len("_calibrated.csv")]
+            pre_path = os.path.join(result_base_dir, subdir_name, stem + "_result.csv")
+            post_path = os.path.join(subdir_path, fname)
+            if not os.path.isfile(pre_path):
+                print(f"[main_before_after] 跳过（无对应 result）：{pre_path}")
+                continue
+            name = stem.replace("_labeled_fpt_scaler_fbtcn", "").replace("labeled_fpt_scaler_fbtcn", "")
+            if not name:
+                name = stem
+            collected.append({
+                "pre_path": pre_path,
+                "post_path": post_path,
+                "title": name,
+                "name": name,
+            })
+    if not collected:
+        print("[main_before_after] 未找到任何校准后 CSV，跳过绘图")
+        return
+    for item in collected:
+        pre_path = item["pre_path"]
+        post_path = item["post_path"]
+        title = item["title"]
+        name = item["name"]
+        try:
+            y_true_pre, mu_pre, var_pre = load_pre_calibration(pre_path)
+            y_true_post, mu_post, var_post = load_post_calibration(post_path)
+        except Exception as e:
+            print(f"[main_before_after] 加载失败 {name}: {e}")
+            continue
+        qs_pre, empirical_pre, ece_pre = compute_calibration_curve(
+            y_true=y_true_pre, mu=mu_pre, var=var_pre, n_bins=n_bins
+        )
+        qs_post, empirical_post, ece_post = compute_calibration_curve(
+            y_true=y_true_post, mu=mu_post, var=var_post, n_bins=n_bins
+        )
+        fig, ax = plt.subplots(figsize=(6, 6))
+        ax.plot(qs_pre, empirical_pre, marker="o", label=f"校准前 (ECE={ece_pre:.3f})", linewidth=1.5, markersize=4)
+        ax.plot(qs_post, empirical_post, marker="s", label=f"校准后 (ECE={ece_post:.3f})", linewidth=1.5, markersize=3)
+        ax.plot([0, 1], [0, 1], color="black", linestyle="--", label="理想曲线", linewidth=1.5)
+        ax.set_xlabel("名义分位数", fontsize=14)
+        ax.set_ylabel("经验累积分布函数", fontsize=14)
+        ax.set_title(title, fontsize=16, fontweight="bold")
+        ax.legend(fontsize=12)
+        ax.grid(True, alpha=0.3)
+        ax.tick_params(axis="both", which="major", labelsize=12)
+        safe_name = name.replace(os.sep, "_").replace(" ", "_")
+        out_path = os.path.join(out_fig_dir, f"{safe_name}.svg")
+        fig.savefig(out_path, dpi=300, bbox_inches="tight", format="svg")
+        plt.close(fig)
+        print(f"[main_before_after] 已保存: {out_path}")
+    print(f"[main_before_after] 共保存 {len(collected)} 张可靠性图到: {out_fig_dir}")
+
+
 def main():
     """
     批量绘制校准前后可靠性曲线。
