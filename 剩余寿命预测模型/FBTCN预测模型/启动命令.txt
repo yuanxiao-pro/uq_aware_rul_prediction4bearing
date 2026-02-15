@@ -42,6 +42,9 @@ A-seed0:
 A-sa_revise:
 --config_path ../../config/ablation/A_fbtcn_config_ablation_no_rds_sa_revise.json
 
+A-all data
+--config_path ../../config/ablation/A_fbtcn_config_ablation_no_rds_all_data.json
+
 C:
 --config_path ../../config/ablation/C_fbtcn_config_ablation_compact.json
 
@@ -62,6 +65,7 @@ G no_fkl:
 
 myexp:
 --config_path ../../config/Z_fbtcn_config_myexp.json
+
 
 
 /mnt/uq_aware_rul_prediction4bearing-main/剩余寿命预测模型/FBTCN预测模型/auto_train_mscrgat.py

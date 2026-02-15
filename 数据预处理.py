@@ -371,9 +371,9 @@ def label_bearings_after_fpt(dataset='xjtu'):
         fpt = fpt_dict[bearing_name]
         
         # 如果FPT为0，跳过（没有FPT点）
-        if fpt == 0:
-            print(f"轴承 {bearing_name} 的FPT为0，跳过")
-            continue
+        # if fpt == 0:
+        #     print(f"轴承 {bearing_name} 的FPT为0，跳过")
+        #     continue
         
         # 加载数据
         features_df = load(features_df_file)
@@ -418,10 +418,10 @@ if __name__ == '__main__':
     # 处理XJTU-SY_Bearing_Datasets数据集（原有流程，结果在 datasetresult/xjtu 等）
     # process_all_bearings('./datasetresult/femto_origin/')
     # label_bearings_after_fpt('femto')
-    # process_all_bearings('./datasetresult/xjtu_origin/')
-    # label_bearings_after_fpt('xjtu')
+    process_all_bearings('./datasetresult/xjtu_origin/')
+    label_bearings_after_fpt('xjtu')
 
     # MSCRGAT 特征流程：用 mscrgat_extract_features_from_file 提取 13 个 light_bar 特征，结果存到 datasetresult/xjtu_mscrgat，不覆盖上面数据
-    process_all_bearings_mscrgat('./datasetresult/femto_origin/')
-    label_bearings_after_fpt('femto_mscrgat')
+    # process_all_bearings_mscrgat('./datasetresult/femto_origin/')
+    # label_bearings_after_fpt('femto_mscrgat')
 

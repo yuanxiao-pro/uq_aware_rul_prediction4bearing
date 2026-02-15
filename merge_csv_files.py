@@ -594,10 +594,14 @@ if __name__ == "__main__":
         # metrics_df = main("before", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/F_no_sa_no_rds/metrics_summary_F_no_sa_no_rds.csv")
         # metrics_df = main("after", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/F_no_sa_no_rds/metrics_summary_F_no_sa_no_rds_calibrated.csv")
         
+        # directories = [
+        #     '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging',
+        #     '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging',
+        # ]
         directories = [
-            '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_xjtu_ensemble_bagging',
-            '/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/xjtu_to_femto_ensemble_bagging',
+            '/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/A_no_rds_all_data/xjtu_to_xjtu',
+            '/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/A_no_rds_all_data/xjtu_to_femto',
         ]
-        metrics_df = main("before", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/metrics_summary_xjtu_to_xjtu_ensemble_bagging_seed0.csv")
-        metrics_df = main("after", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_baselines_result/bagging_ens_mscrgat_seed0/metrics_summary_xjtu_to_xjtu_ensemble_bagging_seed0_calibrated.csv")
+        metrics_df = main("before", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/A_no_rds_all_data/metrics_summary_A_no_rds_all_data.csv")
+        metrics_df = main("after", directories, "/mnt/uq_aware_rul_prediction4bearing-main/auto_ablation_result/A_no_rds_all_data/metrics_summary_A_no_rds_all_data_calibrated.csv")
         

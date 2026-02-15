@@ -945,6 +945,9 @@ def main(config):
                 bearing_name = bearing_name_for_scaler.replace("_labeled_fpt_scaler", "")
             elif test_datasets_type == 'femto_made':
                 bearing_name = bearing_name_for_scaler.replace("_labeled_fpt_scaler", "")
+            else:
+                # 其他类型（如 xjtu_made_mscrgat、femto_made_mscrgat 等）统一用相同规则
+                bearing_name = bearing_name_for_scaler.replace("_labeled_fpt_scaler", "") if "_labeled_fpt_scaler" in bearing_name_for_scaler else bearing_name_original
             
             # 保存第一次测试结果
             evaluate_and_save_metrics(target, prediction, origin_prediction, log_var_list, mu_samples, 
@@ -1040,7 +1043,7 @@ if __name__ == "__main__":
     args, unknown = parser.parse_known_args()
     config_path = args.config_path
     if config_path is None:
-        config_path = os.path.join(os.path.dirname(__file__), '../../config/Z_fbtcn_config_myexp.json')
+        config_path = os.path.join(os.path.dirname(__file__), '../../config/ablation/A_fbtcn_config_ablation_no_rds_all_data.json')
     if not os.path.exists(config_path):
         raise ValueError(f"配置文件 {config_path} 不存在")
     logger.info(f"使用的配置参数json为：{config_path}")
@@ -1051,7 +1054,7 @@ if __name__ == "__main__":
 
     # tasks = [['femto_made', 'femto_made'], ['xjtu_made', 'xjtu_made'], ['xjtu_made', 'femto_made'], ['femto_made', 'xjtu_made']]
     # tasks = [['xjtu_made', 'xjtu_made']]
-    tasks = [['xjtu_made', 'xjtu_made'], ['xjtu_made', 'femto_made']]
+    tasks = [['xjtu_made_v3', 'xjtu_made_v3']]
 
     total_script_start_time = time.time()
     for task_idx, task in enumerate(tasks):

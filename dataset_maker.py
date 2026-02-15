@@ -158,7 +158,9 @@ def visualize_all_features(input_dir='datasetresult/xjtu_made', window_size=1):
         plt.close()
 
 if __name__ == '__main__':
-    process_all_labeled_csv(input_dir='datasetresult/femto_mscrgat', output_dir='datasetresult/femto_made_mscrgat', window_size=1) 
+    # process_all_labeled_csv(input_dir='datasetresult/femto_mscrgat', output_dir='datasetresult/femto_made_mscrgat', window_size=1) 
+    process_all_labeled_csv(input_dir='datasetresult/xjtu', output_dir='datasetresult/xjtu_made_v3', window_size=1) 
+    
     # load_and_test_data()
     # visualize_all_features(window_size=1)
 
