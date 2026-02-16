@@ -234,7 +234,7 @@ def predict_on_calibration_dataset(
         first_bearing = calibration_bearings[0]
         bearing_name_for_scaler = first_bearing
         # 根据数据集类型确定 scaler 文件名
-        if test_datasets_type == 'xjtu_made':
+        if test_datasets_type == 'xjtu_made' or test_datasets_type == 'xjtu_made_v3':
             bearing_name_for_scaler = first_bearing.replace("_labeled", "_labeled_fpt_scaler")
         elif test_datasets_type == 'femto_made':
             bearing_name_for_scaler = first_bearing.replace("_labeled", "_labeled_fpt_scaler")

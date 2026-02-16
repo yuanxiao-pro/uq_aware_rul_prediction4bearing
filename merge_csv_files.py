@@ -240,13 +240,12 @@ def get_bearing_csv_files_from_dir(mode, directory):
     # 过滤出符合模式的文件，并排除结果文件
     bearing_csv_files = []
     if mode == "before":
-        # patterns = [
-        #     r'Bearing\d+_\d+\.csv$',  # Bearing*_*.csv 模式
-        #     r'c\d+_Bearing\d+_\d+\.csv$',  # c*_Bearing*_*.csv 模式
-        # ]
+        # 支持多种输出格式：ensemble 模型、FBTCN 等
         patterns = [
-            r'Bearing\d+_\d+_ensemble_metrics\.csv$',  # Bearing*_*_ensemble_metrics.csv
+            r'Bearing\d+_\d+_ensemble_metrics\.csv$',  # Bearing*_*_ensemble_metrics.csv (ensemble)
             r'Bearing\d+_\d+.*ensemble_metrics\.csv$',  # Bearing1_3____rga___a_e_e_ensemble_metrics.csv 等
+            r'Bearing\d+_\d+_labeled\.csv$',  # Bearing*_*_labeled.csv (FBTCN xjtu)
+            r'Bearing\d+_\d+\.csv$',  # Bearing*_*.csv (FBTCN femto，排除 *_calibrated_metrics.csv)
         ]
     elif mode == "after":
         patterns = [
@@ -260,6 +259,9 @@ def get_bearing_csv_files_from_dir(mode, directory):
         filename = os.path.basename(csv_file)
         # 排除包含 '_result' 的文件（这些是预测结果文件，不是指标文件）
         if '_result' in filename:
+            continue
+        # before 模式排除校准后的指标文件
+        if mode == "before" and '_calibrated' in filename:
             continue
         # 检查是否符合任一模式
         for pattern in patterns:

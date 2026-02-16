@@ -13,7 +13,7 @@
         "femto_Bearing3_1", "femto_Bearing3_2", "femto_Bearing3_3"],
     "context_bearings": [],
     "validation_bearings": ["xjtu_Bearing1_2", "xjtu_Bearing2_4", "xjtu_Bearing3_1", "femto_Bearing1_6", "femto_Bearing2_1", "femto_Bearing3_1"],
-    "calibration_mode": "test",
+    "calibration_mode": "custom",
     "exclude_validation_from_training": false,
     "use_same_condition_validation": true,
     "input_dim": 11,
